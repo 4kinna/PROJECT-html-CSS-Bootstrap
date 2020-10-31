@@ -220,7 +220,6 @@ h6 {
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(144, 238, 144, 0.753)' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-  fill: contrast(200%) !important;
 }
 
 .carousel-control-prev-icon {
@@ -233,7 +232,6 @@ h6 {
 
 .contact-container {
   display: flex;
-  justify-content: baseline;
 }
 
 .my-contact {
@@ -354,8 +352,6 @@ h6 {
     gap: 5px;
     grid-template-areas:
       "news intro"
-      "news intro"
-      "news intro"
       "cars cars";
   }
   .item1 {
@@ -376,7 +372,7 @@ h6 {
   /* ------ */
 
   .card-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1px;
   }
 
@@ -418,10 +414,11 @@ h6 {
   .my-container {
     grid-template-columns: 3fr auto 3fr;
     gap: 10px;
-    grid-template-areas:
-      "news intro cars"
-      "news intro cars"
-      "news intro cars";
+    grid-template-areas: "news intro cars";
+  }
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
   }
 }
 
